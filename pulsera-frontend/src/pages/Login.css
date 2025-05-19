@@ -1,0 +1,102 @@
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 100vh;
+  background: #000000;
+  padding-top: 60px
+}
+
+
+.logo-video {
+  width: 280px;
+  margin-bottom: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.2);
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.input-container {
+  position: relative;
+}
+
+.input-container input {
+  padding: 10px;
+  font-size: 1rem;
+  width: 240px;
+  border: 1px solid #0e0a0a;
+  border-radius: 6px;
+  padding-right: 30px;
+}
+
+.login-form button {
+  padding: 10px;
+  font-size: 1rem;
+  width: 100%;
+  background-color: #e7eaee;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.fade-in {
+  animation: fadeIn 0.6s ease-in-out forwards;
+  opacity: 0;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+  }
+}
+.toggle-icon {
+  position: absolute;
+  right: 35px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  color: #777;
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.login-container {
+  position: relative;
+  height: 100vh;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #1e3c72);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.login-form input:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 6px #007bff;
+  transition: box-shadow 0.3s ease-in-out;
+}
+.titulo-bienvenida {
+  color: white;
+  font-size: 4rem;
+  margin-bottom: 40px;
+  font-family: 'Segoe UI', sans-serif;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
+}
